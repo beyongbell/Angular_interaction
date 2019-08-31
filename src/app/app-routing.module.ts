@@ -6,6 +6,8 @@ import { ChildComponent } from './child/child.component';
 import { OneComponent } from './child/one/one.component';
 import { TwoComponent } from './child/two/two.component';
 import { ThreeComponent } from './child/three/three.component';
+import { FourComponent } from './child/four/four.component';
+import { StudentComponent } from './child/student/student.component';
 
 const routes: Routes = [
   { path: '',      component: DashboardComponent },
@@ -23,5 +25,7 @@ export const RouterComponents = [
   ChildComponent,
   OneComponent,
   TwoComponent,
-  ThreeComponent
+  ThreeComponent,
+  FourComponent,
+  StudentComponent
 ]
