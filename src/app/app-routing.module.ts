@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChildComponent } from './child/child.component';
+import { OneComponent } from './child/one/one.component';
 
 const routes: Routes = [
   { path: '',      component: DashboardComponent },
@@ -14,3 +15,9 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+export const RouterComponents = [
+  DashboardComponent,
+  ChildComponent,
+  OneComponent
+]

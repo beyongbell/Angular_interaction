@@ -1,1 +1,12 @@
-<p>child works!</p>
+<h2> Child Component </h2>
+<div>
+    <button (click)="userLoggedIn=true">Login</button>
+    <button (click)="userLoggedIn=false">Logout</button>
+    {{ userLoggedIn }}
+</div>
+<app-one [loggedIn]="userLoggedIn" [logged_In]="userLoggedIn"></app-one>
+<hr>
+<app-two #child [loggedIn]="userLoggedIn"></app-two>
+{{ child.name }}
+<button (click)="child.greetTinnakorn()">Two Component Active</button>
+

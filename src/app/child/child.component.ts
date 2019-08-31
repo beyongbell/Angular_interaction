@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class ChildComponent implements OnInit {
 
+  userLoggedIn = true;
+
   constructor() { }
 
   ngOnInit() {

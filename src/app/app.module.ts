@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, RouterComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ChildComponent } from './child/child.component';
+import { TwoComponent } from './child/two/two.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    ChildComponent
+    RouterComponents,
+    TwoComponent,
   ],
   imports: [
     BrowserModule,

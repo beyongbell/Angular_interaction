@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   pageTitle = "Angular Component Interaction";
+  userLoggedIn = true;
 }
