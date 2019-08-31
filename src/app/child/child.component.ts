@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, AfterViewInit  } from '@angular/core';
+import { ThreeComponent } from './three/three.component';
 
 @Component({
   selector: 'app-child',
@@ -6,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 
-export class ChildComponent implements OnInit {
+export class ChildComponent implements AfterViewInit   {
 
   userLoggedIn = true;
 
-  constructor() { }
+  @ViewChild(ThreeComponent, { static: true }) ThreeComponentRef: ThreeComponent;
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    console.log(this.ThreeComponentRef.name)
   }
-
 }

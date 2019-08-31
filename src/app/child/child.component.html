@@ -9,4 +9,7 @@
 <app-two #child [loggedIn]="userLoggedIn"></app-two>
 {{ child.name }}
 <button (click)="child.greetTinnakorn()">Two Component Active</button>
+<hr>
 
+<app-three #three [loggedIn]="userLoggedIn"></app-three>
+{{ three.name }}
