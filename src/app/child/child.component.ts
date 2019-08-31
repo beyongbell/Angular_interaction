@@ -16,4 +16,8 @@ export class ChildComponent implements AfterViewInit   {
   ngAfterViewInit() {
     console.log(this.ThreeComponentRef.name)
   }
+
+  greet(name:string) {
+    alert("Hello"+name)
+  }
 }

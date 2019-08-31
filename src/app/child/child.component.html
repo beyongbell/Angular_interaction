@@ -13,3 +13,6 @@
 
 <app-three #three [loggedIn]="userLoggedIn"></app-three>
 {{ three.name }}
+<hr>
+
+<app-four (greetEvent)="greet($event)"></app-four>
