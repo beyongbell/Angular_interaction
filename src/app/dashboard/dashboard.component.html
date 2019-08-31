@@ -1,0 +1,18 @@
+<img src="{{ imgUrl }}" alt="">
+<img [src]="imgUrl" alt="">
+<div>
+  <button (click)="incrementCount()"> Click </button>
+  <p> Clicked {{ count }}</p>
+</div>
+<div>
+  <input #nameRef type="text" [(ngModel)]="name">
+  <p> welcome {{ name }}</p>
+</div>
+<div>
+  <input type="text" [ngModel]="username" (ngModelChange)="greetTinnakorn($event)">
+  <p> Username : {{ username }}</p>
+</div>
+<div>
+  <input type="text" [(ngModel)]="customerSet">
+  <p> Customer : {{ customerGet }}</p>
+</div>
